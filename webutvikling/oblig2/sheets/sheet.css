@@ -19,7 +19,7 @@ body{
     grid-column: 1/4;
     grid-row: 1;
     text-align: center;
-    background-image: url("../bilder/header.png");
+    background-image: url("../bilder/header2.png");
     background-repeat: no-repeat;
     min-height: 194px;
 }
