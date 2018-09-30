@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Font vokser</title>
+
+<style>
+#tegneflate {
+border-style:solid;
+
+background-color:#341430;
+}
+</style>
+
+
+</head>
+<body>
+
+<script>
+
+window.onload = oppstart;
+var teller = 10;
+
+function oppstart() {
+	setInterval("animasjon()",100);
+}
+
+function animasjon() {
+
+	teller +=1;
+	var canvas = document.getElementById("tegneflate");
+	var ctx = canvas.getContext("2d");
+	
+	var stor = (Math.pow(1.04,teller)) + "px";
+	var fonten = "Arial";
+	var sammen = stor + " " + fonten;
+
+	ctx.clearRect(0, 0, 1200, 600);
+	ctx.font = sammen;
+
+	ctx.fillStyle = "#008060";
+	ctx.fillText("Hello World",10,550);
+	
+
+	
+
+}
+
+
+
+</script>
+
+
+<canvas id="tegneflate" width="1200" height="600"/>
+
+
+</body>
+</html>

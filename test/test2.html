@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Canvas</title>
+<style>
+#tegneflate
+{
+	background-color: #99ccff;
+	
+}
+</style>
+
+</head>
+
+
+<script>
+
+window.onload = oppstart;
+
+function oppstart() {
+	setInterval("animasjon()",50);
+}
+
+var x = 450;
+var y = 50;
+var radius = 40;
+var teller = 0;
+
+function animasjon() {
+
+	teller +=1;
+	var canvas = document.getElementById("tegneflate");
+	var ctx = canvas.getContext("2d");
+
+	ctx.clearRect(0,0,500,500);
+	
+	if(teller < 60)
+	{
+		x-=5;
+	}
+	if(teller > 60 && teller < 70)
+	{
+	radius +=5;
+	}
+	if(teller > 70 && teller < 140)
+	{
+		x+=5;
+		y+=5;
+	
+	}
+	if (teller == 180)
+	{
+		teller = 0;
+		x = 450;
+		y = 50;
+		radius = 40;
+	
+	}
+	
+	// sirkele
+	ctx.beginPath();
+	ctx.arc(x,y,radius,0,2*Math.PI);
+	ctx.strokeStyle = "#ff751a";
+	ctx.lineWidth = 2;
+	//ctx.fillStyle = "#ff751a";
+	//ctx.fill();
+	ctx.stroke();
+	
+	
+}
+
+</script>
+<body>
+	<canvas id="tegneflate" width="500" height="500"/>
+
+</body>
+</html>

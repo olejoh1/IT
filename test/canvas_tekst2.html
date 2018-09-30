@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Areal og omkrets</title>
+<style>
+#tegneflate {
+border-style:solid;
+background-color:#FFFFFF;
+}
+</style>
+<script>
+
+
+
+window.onload = oppstart;
+var ctx;
+var canvas;
+
+
+function oppstart()
+{
+	document.getElementById("knappEn").onclick = tegne;
+	canvas = document.getElementById("tegneflate");
+    ctx = canvas.getContext("2d");
+
+}
+
+
+
+function tegne ()
+{
+	var teksten = "";
+	var xpos = 100;
+	var ypos = 50;
+	var fontstor = 15;
+	var fonten = "px Verdana";
+	
+	
+	var fontsammen = fontstor + fonten; //"15px Verdana"
+	
+	ctx.clearRect(0,0,300,300);
+	
+
+	
+	teksten = String(document.getElementById("tekstInn").value);
+
+	
+		ctx.font = fontsammen;
+		ctx.fillStyle = "#111111";
+		ctx.fillText(teksten,xpos,ypos);
+	
+		ctx.beginPath();
+		ctx.rect((xpos - 5),(ypos - 5),100,100); //talla: x,y,width, height
+		ctx.strokeStyle = "#4d4d00";
+		ctx.lineWidth = 2;
+		ctx.stroke();
+
+}	
+	
+	
+	
+	
+	
+</script>
+
+</head>
+<body>
+<h1>Tekst</h1>
+<canvas id="tegneflate" width = "300" height = "300"></canvas>
+
+	<br>
+
+   Trykk: <button type="button" id="knappEn">Enter</button>
+   <br>
+
+
+   
+    <br>
+   Skriv inn tekst : <input type="tekst" id ="tekstInn" />
+    Skriv inn fontstørrelse: <input type="tekst" id ="tekstInn" />
+	 Skriv inn xpos : <input type="tekst" id ="tekstInn" />
+	  Skriv inn ypos: <input type="tekst" id ="tekstInn" />
+   
+
+
+
+
+
+</body>
+</html>
