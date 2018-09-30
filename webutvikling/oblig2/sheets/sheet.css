@@ -79,7 +79,9 @@ body{
 }
 
 .footer {
-    position: absolute;
+    position: sticky;
+    padding-bottom: 1px;
+    padding-top: 1px;
     bottom: 0%;
     width: 100%;
     text-align: center;
