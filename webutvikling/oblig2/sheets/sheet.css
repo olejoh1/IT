@@ -22,6 +22,7 @@ body{
     background-image: url("../bilder/header2.png");
     background-repeat: no-repeat;
     min-height: 194px;
+    padding-top: 70px;
 }
 
 .main_nav {
