@@ -113,3 +113,17 @@ body{
 #head_tittle {
     font-size: 40px;
 }
+
+.main_git {
+    grid-row: 3;
+    grid-column: 1/3;
+}
+
+.main_git section {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#commit {
+    width: 500px;
+}
