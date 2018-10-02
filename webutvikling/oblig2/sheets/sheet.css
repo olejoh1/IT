@@ -129,6 +129,26 @@ body{
     float: right;
 }
 
+#csslayout {
+    width: 400px;
+    float: right;
+}
+
+#flexbox {
+    width: 400px;
+    float: right;
+}
+
+#grid {
+    width: 400px;
+    float: right;
+}
+
+#wrapper {
+    width: 400px;
+    float: right;
+}
+
 .lesMer {
     padding: 3px;
     text-decoration: none;
