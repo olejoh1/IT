@@ -130,22 +130,22 @@ body{
 }
 
 #csslayout {
-    width: 400px;
+    width: 300px;
     float: right;
 }
 
 #flexbox {
-    width: 400px;
+    width: 300px;
     float: right;
 }
 
 #grid {
-    width: 400px;
+    width: 300px;
     float: right;
 }
 
 #wrapper {
-    width: 400px;
+    width: 300px;
     float: right;
 }
 
