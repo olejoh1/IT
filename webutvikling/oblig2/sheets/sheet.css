@@ -128,3 +128,22 @@ body{
     width: 400px;
     float: right;
 }
+
+.lesMer {
+    padding: 3px;
+    text-decoration: none;
+    border-style: outset;
+    border-width: 5px;
+    border-color: gray;
+    background-color: pink;
+}
+
+.lesMer:hover {
+    background-color: lightgrey;
+    text-decoration: underline;
+}
+
+.lesMer:active {
+    text-decoration: underline;
+    border-style: inset;
+}
