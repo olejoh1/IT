@@ -22,19 +22,28 @@
                 <section>
                     <h3>CSS Layout</h3>
                     <article>
-                        <h4></h4>
+                        <h4>CSS</h4>
                         <img src="../bilder/commit.PNG" id="commit" alt="Commit"/>
                         <p>
-                            Slik Git fungerer er at det er et system som er gratis å bruke. Funksjonen til Git er at du legger til filene som hører til prosjektet du holder på med. Dette kan være bilder, maler og kodene som blir brukt til prosjektet. Du laster så opp filene til GitHub. GitHub er hovedsentralen til der prosjektet ditt blir lagret. På nettsiden lager du et Repository. Dette blir prosjekt mappen din på nettstedet. Der kan du se hvilke filer som ligger i prosjektet, og hvilke endringer som blir gjort i filene som hører til.
+                            CSS layout er det som bestemmer hvordan en nettside skal se ut. Når det kommer til hvordan man lager layouter til nettsiden, så kan en velge mellom mange forskjellige metoder å skape dette designet på. En kan bruke flexbox, grid, ingen av delene, den gamle wrapper metoden, osv. Det er mange metoder, og alle har sin egen måte å lage designet på.
                         </p>
+                    </article>
+                    <article>
+                        <h4>Flexbox</h4>
                         <p>
-                            Det som er fint med Git og GitHub er at du nå kan jobbe med andre med den samme koden på forskjellige områder i verden. Når så en laster opp noe nytt til koden må den bekreftes av en annen en for at den skal bli lagt til. Dette gjør at prosjekter ikke bare lenger blir enklere å fullføre, men at en nå kan jobbe med andre verden rundt.
+                            Flexbox er bygd opp slik at du setter alt som skal være i flexboxen i en gruppe i koden din. Så skriver en inn display: flex; i css og linker dette til gruppen. Dette gjør at innholdet i gruppen blir fleksibelt. Dette gjør at du kan flytte og mikse om på hvordan de forskjellige elementene ligger inne i flexboxen. Du kan si at det skal ligge i rekker horisontalt eller vertikalt. Du kan bestemme størrelsene på elementene og om de skal legge seg opp i et av de andre elementene eller ikke.
                         </p>
+                    </article>
+                    <article>
+                        <h4>Grid</h4>
                         <p>
-                            Git har sitt egne kommandospråk. Dette språket er slått sammen av noe av terminalspråket som hører til datamaskinen generelt, og noe den implanterer selv som push, pull, init og fetch. Push funker slik at når denne kommandoen blir satt i gang sender den alle endringene i filene om mappen til Repository-et som ligger på GitHub sine servere. Pull henter alle endringene som har blitt gjort i filene og mappen. Init lagger et tomt Repository på pc-en din lokalt, som du så kan laste opp til GitHub for å kunne jobbe på filene på flere enheter i rundt om i verden. Fetch funker slik at den henter ut alt i mappene. I motsetning til pull som henter endringene så henter fetch alt. Dette vil si at om noe du har skrevet kolliderer med noe noen andre har skrevet sletter den det du skrev og bytter det ut med det de skrev.
+                            Grid er et av de nyeste verktøyene når det kommer til å lage nettdesign. Du lager i CSS et skjema hvor du bestemmer hvor mange rekker og rader det skal være. Så kan du spesifikt bestemme hvor langt det skal være mellom hver rad og rekke, og du kan bestemme hvor innholdet i grid-en skal ligge. I html koden din har det dermed ikke noe å si hvor noe ligger så lenge det er inne i det området du har satt av som grid området. Du kan si at artiklene skal ligge i den og den kolonnen inne i grid-en.
                         </p>
+                    </article>
+                    <article>
+                        <h4>Old school</h4>
                         <p>
-                            Jeg synes at Git og GitHub er utrolig praktisk for utviklere som jobber med kode. Vi kan ha våre egne prosjekter lagret der, og få andre utviklere sine tilbakemeldinger på arbeide vårt. Vi kan også da jobbe med koden på en maskin, og dra og jobbe med den samme koden et helt annet sted.
+                            Det gamle systemet for å lage design var at en satt alt en skulle ha som en gruppe inn i en div i html, og kalte gruppen for en wrapper. Før de nye semantiske taggene kom, så satt man inn en id eller en class for hvert element og kalte de header, nav, main og footer. Dette systemet gjorde at ting ikke alltid fungerte som en ønsket, og det var vanskeligere for maskiner som skulle hjelpe folk som ikke kunne lese nettsiden å tolke den. Wrapperen fungerte som flexbox gjør. Man satte den displayet likt flex, for å lage den til en flexbox.
                         </p>
                     </article>
                 </section>
