@@ -216,3 +216,11 @@ body{
         margin: 1cm, 2cm;
     }
 }
+
+.mal_container {
+    text-align: center;
+}
+
+.maler {
+    width: 500px;
+}
