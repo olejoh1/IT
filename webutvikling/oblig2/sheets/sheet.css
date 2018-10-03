@@ -203,9 +203,16 @@ body{
     body{
         visibility: hidden;
     }
+
+    header, nav, footer {
+        display: none;
+    }
     
     .print {
         visibility: visible;
     }
 
+    @page {
+        margin: 1cm, 2cm;
+    }
 }
