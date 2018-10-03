@@ -172,3 +172,22 @@ body{
     text-decoration: underline;
     border-style: inset;
 }
+
+#print {
+    padding: 3px;
+    text-decoration: none;
+    border-style: outset;
+    border-width: 3px;
+    border-color: gray;
+    background-color: aquamarine;
+}
+
+#print:hover {
+    background-color: lightslategrey;
+    text-decoration: underline;
+}
+
+#print:active {
+    text-decoration: underline;
+    border-style: inset;
+}

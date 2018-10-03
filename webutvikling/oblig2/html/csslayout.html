@@ -4,6 +4,7 @@
         <meta charset="utf-8"/>
 		<title>CSS Layout</title>
         <link rel="stylesheet" type="text/css" href="../sheets/sheet.css">
+        <link rel="stylesheet" type="text/css" href="../sheets/print.css" media="print">
     </head>
     <body>
         <div class="container">
@@ -11,7 +12,7 @@
                 <h1 id="head_tittle">CSS Layout</h1>
             </header>
             <nav class="main_nav">
-                 <ul class="nav_liste">
+                 <ul class="nav_liste print">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="github.html">Git/GitHub</a></li>
                     <li><a href="mediatypes.html">Media Typer</a></li>
@@ -53,7 +54,7 @@
             </main> 
             <aside class="aside">
                 <h3>Aside</h3>
-                
+                <a href="#" id="print" onclick="window.print();return false;">Print</a>
             </aside>
         </div>
         <footer class="footer">
