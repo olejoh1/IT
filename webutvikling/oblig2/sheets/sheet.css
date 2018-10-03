@@ -197,3 +197,15 @@ body{
     text-decoration: underline;
     border-style: inset;
 }
+
+@media print {
+
+    body{
+        visibility: hidden;
+    }
+    
+    .print {
+        visibility: visible;
+    }
+
+}
