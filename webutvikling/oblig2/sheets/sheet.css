@@ -92,6 +92,13 @@ body{
 
 #video {
     color: lightskyblue;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+
+#video:hover {
+    text-decoration: underline;
+    color: #3535bd;
 }
 
 #ul_linker {
@@ -158,6 +165,7 @@ body{
     border-width: 5px;
     border-color: gray;
     background-color: pink;
+    font-variant: small-caps;
 }
 
 .lesMer:hover {
@@ -177,6 +185,7 @@ body{
     border-width: 3px;
     border-color: gray;
     background-color: aquamarine;
+    font-variant: small-caps;
 }
 
 #print:hover {
