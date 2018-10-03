@@ -24,28 +24,40 @@
                     <h3>CSS Layout</h3>
                     <article>
                         <h4>CSS</h4>
-                        <img src="../bilder/csslayout.png" id="csslayout" alt="Csslayout"/>
+                        <figure class="figure_css">
+                            <img src="../bilder/csslayout.png" class="css_bilder" alt="Csslayout"/>
+                            <figcaption>Eksempel på css layout</figcaption>
+                        </figure>
                         <p>
                             CSS layout er det som bestemmer hvordan en nettside skal se ut. Når det kommer til hvordan man lager layouter til nettsiden, så kan en velge mellom mange forskjellige metoder å skape dette designet på. En kan bruke flexbox, grid, ingen av delene, den gamle wrapper metoden, osv. Det er mange metoder, og alle har sin egen måte å lage designet på.
                         </p>
                     </article>
                     <article>
                         <h4>Flexbox</h4>
-                        <img src="../bilder/flexbox.png" alt="Flexbox" id="flexbox" />
+                        <figure class="figure_css">
+                            <img src="../bilder/flexbox.png" class="css_bilder" alt="Flexbox"/>
+                            <figcaption>Eksempel på flexbox</figcaption>
+                        </figure>
                         <p>
                             Flexbox er bygd opp slik at du setter alt som skal være i flexboxen i en gruppe i koden din. Så skriver en inn display: flex; i css og linker dette til gruppen. Dette gjør at innholdet i gruppen blir fleksibelt. Dette gjør at du kan flytte og mikse om på hvordan de forskjellige elementene ligger inne i flexboxen. Du kan si at det skal ligge i rekker horisontalt eller vertikalt. Du kan bestemme størrelsene på elementene og om de skal legge seg opp i et av de andre elementene eller ikke.
                         </p>
                     </article>
                     <article>
                         <h4>Grid</h4>
-                        <img src="../bilder/grid.png" id="grid" alt="Grid" />
+                        <figure class="figure_css">
+                            <img src="../bilder/grid.png" class="css_bilder" alt="Grid"/>
+                            <figcaption>Eksempel på grid</figcaption>
+                        </figure>
                         <p>
                             Grid er et av de nyeste verktøyene når det kommer til å lage nettdesign. Du lager i CSS et skjema hvor du bestemmer hvor mange rekker og rader det skal være. Så kan du spesifikt bestemme hvor langt det skal være mellom hver rad og rekke, og du kan bestemme hvor innholdet i grid-en skal ligge. I html koden din har det dermed ikke noe å si hvor noe ligger så lenge det er inne i det området du har satt av som grid området. Du kan si at artiklene skal ligge i den og den kolonnen inne i grid-en.
                         </p>
                     </article>
                     <article>
                         <h4>Old school</h4>
-                        <img src="../bilder/wrapper.jpg" alt="Wrapper" id="wrapper" />
+                        <figure class="figure_css">
+                            <img src="../bilder/wrapper.jpg" class="css_bilder" alt="Wrapper"/>
+                            <figcaption>Eksempel på Old School</figcaption>
+                        </figure>
                         <p>
                             Det gamle systemet for å lage design var at en satt alt en skulle ha som en gruppe inn i en div i html, og kalte gruppen for en wrapper. Før de nye semantiske taggene kom, så satt man inn en id eller en class for hvert element og kalte de header, nav, main og footer. Dette systemet gjorde at ting ikke alltid fungerte som en ønsket, og det var vanskeligere for maskiner som skulle hjelpe folk som ikke kunne lese nettsiden å tolke den. Wrapperen fungerte som flexbox gjør. Man satte den displayet likt flex, for å lage den til en flexbox.
                         </p>
@@ -54,7 +66,7 @@
             </main> 
             <aside class="aside">
                 <h4>Linker</h4>
-                <ul>
+                <ul id="ul_linker">
                     <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction">CSS Layout</a></li>
                     <li><a href="#">Flexbox</a></li>
                     <li><a href="#">Grid</a></li>

@@ -125,33 +125,30 @@ body{
 }
 
 #commit {
-    width: 500px;
     float: right;
+    text-align: center;
+}
+
+#commit img {
+    width: 500px;
 }
 
 #mediatypes {
+    float: right;
+    text-align: center;
+}
+
+#mediatypes img {
     width: 400px;
-    float: right;
 }
 
-#csslayout {
-    width: 300px;
+.figure_css {
     float: right;
+    text-align: center;
 }
 
-#flexbox {
+.css_bilder {
     width: 300px;
-    float: right;
-}
-
-#grid {
-    width: 300px;
-    float: right;
-}
-
-#wrapper {
-    width: 300px;
-    float: right;
 }
 
 .lesMer {
